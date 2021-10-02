@@ -1,8 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 function ProfileEdit(props) {
-  const textcheck = /^[a-z ,.'-]+$/i;
+  const textcheck = {/^[a-z ,.'-]+$/i};
   // eslint-disable-next-line no-useless-escape
-  const validateEmail = @
+  const validateEmail ={/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i};
 
   return (
     <>
