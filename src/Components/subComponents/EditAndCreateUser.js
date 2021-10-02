@@ -1,8 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 function EditAndCreateUser(props) {
-  const textcheck = /^[a-z ,.'-]+$/i;
-  const validateEmail = @
+  const textcheck = {/^[a-z ,.'-]+$/i};
+  const validateEmail ={/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i};
   return (
     <Formik
       initialValues={{
